@@ -1,12 +1,13 @@
-import { useState, useEffect } from "react";
-import * as C from "./App.styles";
-import { Item } from "./types/Item";
-import { categories } from "./data/categories";
-import { items } from "./data/items";
-import { getCurrentMonth, filterListByMonth } from "./helpers/dateFilter";
-import { TableArea } from "./components/TableArea";
-import { InfoArea } from "./components/InfoArea";
-import { InputArea } from "./components/InputArea";
+import { useState, useEffect } from 'react';
+import * as C from './App.styles';
+import { Item } from './types/Item';
+import { categories } from './data/categories';
+import { items } from './data/inicialItem';
+import { getCurrentMonth, filterListByMonth } from './helpers/dateFilter';
+import { TableArea } from './components/TableArea';
+import { InfoArea } from './components/InfoArea';
+import { InputArea } from './components/InputArea';
+// import { getLocalStorage } from './utils/getTaskStorage';
 
 export function App() {
   const [list, setList] = useState(items);
@@ -15,7 +16,12 @@ export function App() {
   const [income, setIncome] = useState(0);
   const [expense, setExpense] = useState(0);
 
+  // useEffect(() => {
+  //   localStorage.setItem('expenses', JSON.stringify(list));
+  // }, [list]);
+
   useEffect(() => {
+    localStorage.setItem('expenses', JSON.stringify(list));
     setFilteredList(filterListByMonth(list, currentMonth));
   }, [list, currentMonth]);
 

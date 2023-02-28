@@ -13,10 +13,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${(props) => props.theme['gray-800']};
-    color: ${(props) => props.theme['gray-100']};
+    background-color: ${(props) => props.theme['base-900']};
+    color: ${(props) => props.theme['base-100']};
     -webkit-font-smoothing: antialiased;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   body, input, textarea, button, label {
@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 *::-webkit-scrollbar-track {
-  background: ${({ theme }) => theme['gray-900']};
+  background: ${({ theme }) => theme['base-900']};
 
 }
 

@@ -5,5 +5,7 @@ export const Table = styled.table`
   display: block;
   border-collapse: separate;
   border-spacing: 0 0.5rem;
-  border-radius: 6px;
+  border-radius: 20px;
+  background-color: ${({ theme }) => theme['base-900']};
+  padding: 1rem 2rem;
 `;

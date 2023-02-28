@@ -58,7 +58,7 @@ export const InfoArea = ({ currentMonth, onMonthChange, income, expense }: Props
           <ResumeItem
             title="Total"
             value={income - expense}
-            color={income - expense < 0 ? '#F75A68' : '#00875F'}
+            color={income - expense < 0 ? '#F75A68' : '#04D361'}
           />
           <Bank size={26} color={theme['green-300']} />
         </span>

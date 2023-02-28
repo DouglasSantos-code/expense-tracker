@@ -7,7 +7,7 @@ import { getCurrentMonth, filterListByMonth } from './helpers/dateFilter';
 import { TableArea } from './components/TableArea';
 import { InfoArea } from './components/InfoArea';
 import { InputArea } from './components/InputArea';
-import { defaultTheme } from './styles/themes/default';
+import { darkTheme } from './styles/themes/default';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './styles/global';
 
@@ -50,7 +50,7 @@ export function App() {
   };
 
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={darkTheme}>
       <GlobalStyle />
       <C.Container>
         <C.Header>

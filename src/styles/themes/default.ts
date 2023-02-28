@@ -1,14 +1,14 @@
 export const defaultTheme = {
   white: '#fff',
 
-  'gray-100': '#E1E1E6',
-  'gray-300': '#C4C4CC',
-  'gray-400': '#8D8D99',
-  'gray-500': '#7C7C8A',
-  'gray-600': '#323238',
-  'gray-700': '#29292E',
-  'gray-800': '#202024',
-  'gray-900': '#121214',
+  'base-100': '#E1E1E6',
+  'base-300': '#C4C4CC',
+  'base-400': '#8D8D99',
+  'base-500': '#7C7C8A',
+  'base-600': '#323238',
+  'base-700': '#29292E',
+  'base-800': '#202024',
+  'base-900': '#121214',
 
   'green-300': '#00B37E',
   'green-500': '#00875F',
@@ -16,5 +16,29 @@ export const defaultTheme = {
 
   'red-300': '#F75A68',
   'red-500': '#AB222E',
-  'red-700': '#7A1921',
-} as const
+  'red-700': '#7A1921'
+} as const;
+
+export const darkTheme = {
+  white: '#fff',
+
+  'base-100': '#D9DADE',
+  'base-200': '#B3B6BC',
+  'base-300': '#738099', //
+  'base-600': '#6781F7',
+  'base-700': '#212C42',
+  'base-800': '#1E273A',
+  'base-900': '#192233',
+
+  'green-300': '#00B37E',
+  'green-500': '#04D361',
+  'green-700': '#00875F',
+
+  'purple-300': '#865BD6',
+  'purple-500': '#8257E6',
+  'purple-700': '#6E3DC8',
+
+  'red-300': '#F75A68',
+  'red-500': '#AB222E',
+  'red-700': '#7A1921'
+} as const;

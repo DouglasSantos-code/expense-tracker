@@ -20,6 +20,7 @@ export const TableItem = ({ item }: Props) => {
       <C.TableColumn width="50%">{item.title}</C.TableColumn>
       <C.TableColumn>
         <C.Value color={categories[item.category].expense ? '#F75A68' : '#00B37E'}>
+          {categories[item.category].color == '#AA2834' && '- '}
           {priceFormatter.format(item.value)}
         </C.Value>
       </C.TableColumn>

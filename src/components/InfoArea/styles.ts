@@ -1,34 +1,55 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-color: #FFF;
-    box-shadow: 0px 0px 5px #CCC;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: -40px;
+  background-color: ${({ theme }) => theme['gray-600']};
+  border-radius: 6px;
+  padding: 1rem 2rem;
+  margin-top: -70px;
+  display: flex;
+  align-items: center;
+  height: 138px;
+  gap: 2rem;
+
+  span {
     display: flex;
-    align-items: center;
+    flex-direction: row-reverse;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: -3px;
+    }
+  }
 `;
 
 export const MonthArea = styled.div`
-    flex: 1;
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  width: 16.25rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 
 export const MonthArrow = styled.div`
-    width: 40px;
-    text-align: center;
-    font-size: 25px;
-    cursor: pointer;
+  cursor: pointer;
+  color: ${({ theme }) => theme['gray-400']};
+  transition: 0.2s;
+
+  &:hover {
+    color: ${({ theme }) => theme['green-300']};
+    transform: scale(1.1);
+  }
 `;
 
 export const MonthTitle = styled.div`
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 `;
 
 export const ResumeArea = styled.div`
-    flex: 2;
-    display: flex;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
 `;

@@ -25,7 +25,7 @@ export const darkTheme = {
   'base-100': '#D9DADE',
   'base-200': '#B3B6BC',
   'base-300': '#738099', //
-  'base-600': '#6781F7',
+  'base-600': '#6781f782',
   'base-700': '#212C42',
   'base-800': '#1E273A',
   'base-900': '#192233',
@@ -37,6 +37,7 @@ export const darkTheme = {
   'purple-300': '#865BD6',
   'purple-500': '#8257E6',
   'purple-700': '#6E3DC8',
+  'purple-linear': 'linear-gradient(90deg, #6E3DC8 -2.27%, #8257E6 101.34%);',
 
   'red-300': '#F75A68',
   'red-500': '#AB222E',

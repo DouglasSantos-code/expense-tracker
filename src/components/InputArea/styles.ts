@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme['purple-500']};
+  background-color: ${({ theme }) => theme['base-600']};
   border-radius: 20px;
   padding: 2rem;
   display: flex;
@@ -23,11 +23,11 @@ export const Input = styled.input`
   padding: 0 16px;
   border: none;
   border-radius: 10px;
-  color: ${(props) => props.theme['base-200']};
+  color: ${(props) => props.theme['base-100']};
   background-color: ${(props) => props.theme['base-700']};
 
   &::placeholder {
-    color: ${(props) => props.theme['base-200']};
+    color: ${(props) => props.theme['base-100']};
   }
 
   &[type='date']::-webkit-calendar-picker-indicator {
@@ -49,14 +49,14 @@ export const Select = styled.select`
   padding: 0 16px;
   border: none;
   border-radius: 10px;
-  color: ${(props) => props.theme['base-200']};
+  color: ${(props) => props.theme['base-100']};
   background-color: ${(props) => props.theme['base-700']};
 `;
 export const Button = styled.button`
   width: 100%;
   height: 50px;
   border: 0;
-  background: ${(props) => props.theme['green-700']};
+  background: ${(props) => props.theme['green-300']};
   color: ${(props) => props.theme.white};
   font-weight: bold;
   padding: 0 1.25rem;

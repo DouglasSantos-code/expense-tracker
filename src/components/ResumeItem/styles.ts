@@ -6,7 +6,7 @@ export const Container = styled.div`
 
 export const Title = styled.div`
   font-weight: 400;
-  color: ${({ theme }) => theme['base-200']};
+  color: ${({ theme }) => theme['base-300']};
   margin-bottom: 1rem;
 `;
 

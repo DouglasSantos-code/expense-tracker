@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
   :focus {
     outline: 0;
-    box-shadow: 0 0 0 2px ${(props) => props.theme['green-500']};
+    box-shadow: 0 0 0 2px ${(props) => props.theme['base-700']};
   }
 
   body {
@@ -26,18 +26,15 @@ export const GlobalStyle = createGlobalStyle`
 
  *::-webkit-scrollbar {
   width: 0.5rem;
+  scroll-behavior: smooth;
 }
 
-*::-webkit-scrollbar-track {
-  background: ${({ theme }) => theme['base-900']};
-
-}
+*::-webkit-scrollbar-track {}
 
 *::-webkit-scrollbar-thumb {
-  background: ${({ theme }) => theme['green-300']};
+  background: ${({ theme }) => theme['base-600']};
 
   border-radius: 1rem;
-  border: 1px solid ${({ theme }) => theme['green-700']};
+  border: 1px solid ${({ theme }) => theme['base-700']};
 }
-
 `;

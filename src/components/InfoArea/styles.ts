@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme['base-600']};
+  /* background: ${({ theme }) => theme['purple-700']}; */
+  background: ${({ theme }) => theme['purple-linear']};
   border-radius: 20px;
   padding: 1rem 2rem;
   margin-top: -98px;
@@ -40,18 +41,24 @@ export const MonthArea = styled.div`
 
 export const MonthArrow = styled.div`
   cursor: pointer;
-  color: ${({ theme }) => theme['base-100']};
-  transition: 0.2s;
+  color: ${({ theme }) => theme['purple-500']};
+  border: 3px solid ${({ theme }) => theme['purple-500']};
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
-    color: ${({ theme }) => theme['green-300']};
-    transform: scale(1.1);
+    color: ${({ theme }) => theme['green-500']};
+    border-color: ${({ theme }) => theme['green-500']};
+    transition: 0.2s;
   }
 `;
 
 export const MonthTitle = styled.div`
   flex: 1;
   text-align: center;
+  font-weight: 700;
 `;
 
 export const ResumeArea = styled.div`

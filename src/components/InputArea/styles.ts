@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: ${({ theme }) => theme['gray-600']};
-  border-radius: 6px;
+  background-color: ${({ theme }) => theme['base-600']};
+  border-radius: 20px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   width: 340px;
   gap: 0.5rem;
-  margin-top: 0.5rem;
 
   h2 {
     margin-bottom: 0.5rem;
@@ -23,9 +22,13 @@ export const Input = styled.input`
   height: 50px;
   padding: 0 16px;
   border: none;
-  border-radius: 6px;
-  color: ${(props) => props.theme['gray-100']};
-  background-color: ${(props) => props.theme['gray-900']};
+  border-radius: 10px;
+  color: ${(props) => props.theme['base-100']};
+  background-color: ${(props) => props.theme['base-700']};
+
+  &::placeholder {
+    color: ${(props) => props.theme['base-100']};
+  }
 
   &[type='date']::-webkit-calendar-picker-indicator {
     cursor: pointer;
@@ -45,16 +48,16 @@ export const Select = styled.select`
   height: 50px;
   padding: 0 16px;
   border: none;
-  border-radius: 6px;
-  color: ${(props) => props.theme['gray-400']};
-  background-color: ${(props) => props.theme['gray-900']};
+  border-radius: 10px;
+  color: ${(props) => props.theme['base-100']};
+  background-color: ${(props) => props.theme['base-700']};
 `;
 export const Button = styled.button`
   width: 100%;
   height: 50px;
   border: 0;
-  background: ${(props) => props.theme['green-500']};
-  color: ${(props) => props.theme['white']};
+  background: ${(props) => props.theme['green-300']};
+  color: ${(props) => props.theme.white};
   font-weight: bold;
   padding: 0 1.25rem;
   border-radius: 6px;
@@ -62,7 +65,7 @@ export const Button = styled.button`
   margin-top: 0.5rem;
 
   &:hover {
-    background: ${(props) => props.theme['green-700']};
+    background: ${(props) => props.theme['green-500']};
     transition: background-color 0.2s;
   }
 `;

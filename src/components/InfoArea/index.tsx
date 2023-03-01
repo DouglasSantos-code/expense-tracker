@@ -38,11 +38,11 @@ export const InfoArea = ({ currentMonth, onMonthChange, income, expense }: Props
     <C.Container>
       <C.MonthArea>
         <C.MonthArrow onClick={handlePrevMonth}>
-          <CaretCircleLeft size={32} />
+          <CaretCircleLeft weight="fill" size={32} />
         </C.MonthArrow>
         <C.MonthTitle>{formatCurrentMonth(currentMonth)}</C.MonthTitle>
         <C.MonthArrow onClick={handleNextMonth}>
-          <CaretCircleRight size={32} />
+          <CaretCircleRight weight="fill" size={32} />
         </C.MonthArrow>
       </C.MonthArea>
       <C.ResumeArea>
@@ -58,7 +58,7 @@ export const InfoArea = ({ currentMonth, onMonthChange, income, expense }: Props
           <ResumeItem
             title="Total"
             value={income - expense}
-            color={income - expense < 0 ? '#F75A68' : '#00875F'}
+            color={income - expense < 0 ? '#F75A68' : '#04D361'}
           />
           <Bank size={26} color={theme['green-300']} />
         </span>

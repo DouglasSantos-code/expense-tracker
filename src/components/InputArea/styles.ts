@@ -6,7 +6,7 @@ export const Container = styled.div`
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  width: 340px;
+  width: 21.25rem;
   gap: 0.5rem;
 
   h2 {
@@ -19,8 +19,8 @@ export const InputLabel = styled.label`
 
 export const Input = styled.input`
   width: 100%;
-  height: 50px;
-  padding: 0 16px;
+  height: 3.125rem;
+  padding: 0 1rem;
   border: none;
   border-radius: 10px;
   color: ${(props) => props.theme['base-100']};
@@ -32,21 +32,27 @@ export const Input = styled.input`
 
   &[type='date']::-webkit-calendar-picker-indicator {
     cursor: pointer;
-    filter: invert(0.8) brightness(50%) sepia(100%) saturate(6%) hue-rotate(240deg);
+    filter: brightness(0) saturate(100%) invert(54%) sepia(5%) saturate(1894%)
+      hue-rotate(181deg) brightness(91%) contrast(83%);
+  }
+
+  &[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
 `;
 
 export const Select = styled.select`
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg fill='rgb(115 128 153) ' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
   background-repeat: no-repeat;
   background-position-x: 96%;
   background-position-y: 12px;
   font-size: 1rem;
   width: 100%;
-  height: 50px;
-  padding: 0 16px;
+  height: 3.125rem;
+  padding: 0 1rem;
   border: none;
   border-radius: 10px;
   color: ${(props) => props.theme['base-100']};
@@ -54,7 +60,7 @@ export const Select = styled.select`
 `;
 export const Button = styled.button`
   width: 100%;
-  height: 50px;
+  height: 3.125rem;
   border: 0;
   background: ${(props) => props.theme['green-300']};
   color: ${(props) => props.theme.white};

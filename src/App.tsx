@@ -10,6 +10,7 @@ import { InputArea } from './components/InputArea';
 import { darkTheme } from './styles/themes/default';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './styles/global';
+import { Coins, CurrencyDollar, Money } from 'phosphor-react';
 
 export function App() {
   const [list, setList] = useState(items);
@@ -54,6 +55,7 @@ export function App() {
       <GlobalStyle />
       <C.Container>
         <C.Header>
+          <Money size={32} />
           <C.HeaderText>Sistema Financeiro</C.HeaderText>
         </C.Header>
         <C.Body>

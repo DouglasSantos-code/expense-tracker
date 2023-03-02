@@ -20,7 +20,7 @@ export const TableColumn = styled.td`
 
 export const Category = styled.div<{ color: string }>`
   display: inline-block;
-  padding: 5px 10px;
+  padding: 0.313rem 0.625rem;
   border-radius: 6px;
   color: ${({ theme }) => theme['base-100']};
   background-color: ${(props) => props.color};

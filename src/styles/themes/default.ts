@@ -25,7 +25,8 @@ export const darkTheme = {
   'base-100': '#D9DADE',
   'base-200': '#B3B6BC',
   'base-300': '#738099', //
-  'base-600': '#6781f782',
+  'base-650': '#6E87F9',
+  'base-600': '#35406e',
   'base-700': '#212C42',
   'base-800': '#1E273A',
   'base-900': '#192233',

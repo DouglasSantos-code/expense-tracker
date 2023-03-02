@@ -5,11 +5,11 @@ export const Container = styled.div`
   background: ${({ theme }) => theme['purple-linear']};
   border-radius: 20px;
   padding: 1rem 2rem;
-  margin-top: -98px;
+  margin-top: -6.125rem;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  height: 138px;
+  height: 8.625rem;
   gap: 2rem;
   box-shadow: 0 2px 19px 2px #192233;
 
@@ -32,7 +32,7 @@ export const Container = styled.div`
 export const MonthArea = styled.div`
   display: flex;
   align-items: center;
-  width: 16.25rem;
+  width: 14.25rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

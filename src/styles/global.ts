@@ -22,6 +22,8 @@ export const GlobalStyle = createGlobalStyle`
   body, input, textarea, button, label {
     font: 400 1rem Roboto, sans-serif;
   }
+
+  
 /* Chrome, Edge, and Safari */
 
  *::-webkit-scrollbar {

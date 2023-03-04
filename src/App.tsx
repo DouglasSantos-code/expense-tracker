@@ -10,7 +10,7 @@ import { InputArea } from './components/InputArea';
 import { darkTheme } from './styles/themes/default';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './styles/global';
-import { Coins, CurrencyDollar, Money } from 'phosphor-react';
+import { Money } from 'phosphor-react';
 
 export function App() {
   const [list, setList] = useState(items);

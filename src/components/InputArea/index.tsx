@@ -90,9 +90,11 @@ export const InputArea = ({ onAdd }: Props) => {
         <C.Input
           type="number"
           value={valueField}
+          min="0"
           onChange={(e) => setValueField(parseFloat(e.target.value))}
         />
       </C.InputLabel>
+
       <C.InputLabel>
         <C.Button onClick={handleAddEvent}>Cadastrar</C.Button>
       </C.InputLabel>

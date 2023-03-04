@@ -5,7 +5,7 @@ export const Table = styled.table`
   display: block;
   border-collapse: separate;
   border-spacing: 0 0.5rem;
-  transform: scaleX(-1);
+  /* transform: scaleX(-1); */
 
   border-radius: 20px;
   background-color: ${({ theme }) => theme['base-900']};
@@ -14,6 +14,11 @@ export const Table = styled.table`
   overflow-y: scroll;
 
   tbody {
-    transform: scaleX(-1);
+    /* transform: scaleX(-1); */
   }
+`;
+
+export const InitialTable = styled.span`
+  color: ${({ theme }) => theme['base-300']};
+  font-size: 1.2rem;
 `;
